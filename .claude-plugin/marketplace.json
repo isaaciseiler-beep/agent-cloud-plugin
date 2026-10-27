@@ -1,0 +1,16 @@
+{
+  "name": "agent-cloud",
+  "owner": {
+    "name": "agent.cloud"
+  },
+  "metadata": {
+    "description": "Build, host and manage apps with agent.cloud"
+  },
+  "plugins": [
+    {
+      "name": "agent-cloud",
+      "source": "./plugins/agent-cloud",
+      "description": "Set up agent.cloud, propose a first app, and build, host and manage apps with MCP and agc. Alpha; CLI publishing qualification and uploader pending."
+    }
+  ]
+}

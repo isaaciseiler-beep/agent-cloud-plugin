@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "agent-cloud": {
+      "type": "http",
+      "url": "https://agent.cloud/mcp"
+    }
+  }
+}

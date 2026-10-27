@@ -1,0 +1,14 @@
+# Client capabilities and acceptance
+
+Launch targets are Claude Code and Codex desktop/CLI. The package is an alpha; it is not a production rollout or an approved directory listing.
+
+| Surface | Measured package capability | Remaining gate |
+| --- | --- | --- |
+| Claude Code 2.1.310, macOS 26.5.2 arm64 | Local-path marketplace install/uninstall and native manifest validation | Connected setup conversations and publishing journeys |
+| Codex CLI 0.165.0-alpha.1.2, macOS 26.5.2 arm64 | Local-path install/uninstall; installed bundle matches its digest; bundled Node helper loads | Connected setup conversations and publishing journeys |
+| Codex desktop | Earlier integration probe loaded Setup and authenticated tools after explicit login | Actual packaged fresh/existing-chat Setup and person/org connection |
+| Other or shell-less surfaces | Only capabilities separately qualified | Local filesystem, shell, runtime, upload and publishing are not assumed |
+
+Shared package tests validate portable schemas, skill metadata, complete relative resources, deterministic output, source exclusions and helper behavior. Independent agent-only forward review covered cold setup, developer context, existing-app management, repeated acceptance and a shell-less local request. These checks do not establish real-client conversational acceptance. Use the bundled [acceptance cases](ACCEPTANCE.md) to record the exact client/version/environment, package digest, observed responses and tool calls for each release.
+
+Setup uses relevant current-conversation context and creates no durable profile. CLI-managed mirrors/checks/default publishing need `agc`; ordinary edits/project tests do not replace those checks. This alpha has no bundled uploader. M1 person/org OAuth acceptance, M2 conversations/desktop, M3 publishing and M4 fallback remain separate gates. Public repository transport and both directory submission routes must also be qualified before advertising them as available.

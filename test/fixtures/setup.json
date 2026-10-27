@@ -1,0 +1,114 @@
+[
+  {
+    "id": "cold-start",
+    "rules": ["PBP-1", "PBP-2"],
+    "context": [],
+    "turns": ["Set up agent.cloud."],
+    "expect": ["Say there is no useful app context and ask one focused question before a personalized proposal."],
+    "forbid": ["Claim access to previous chats or infer a profile.", "Create an app, Work item, profile or job."]
+  },
+  {
+    "id": "existing-developer-context",
+    "rules": ["PBP-1", "PBP-2", "PLG-4"],
+    "context": ["I am a TypeScript developer. Our support team loses track of customer escalation ownership. I want to build locally."],
+    "turns": ["I installed agent.cloud in this chat. Run setup."],
+    "expect": ["One editable proposal for the support team, escalation intake/ownership workflow, supported stack, local route and reason tied to the supplied context.", "Offer accept, edit, another idea and skip; keep technical detail appropriate to a developer."],
+    "forbid": ["Invent historical preferences.", "Provision before acceptance."]
+  },
+  {
+    "id": "specific-app",
+    "rules": ["PBP-1", "PBP-3"],
+    "context": [],
+    "turns": ["Build and host a TypeScript dashboard for tracking support escalations on agent.cloud. I will use the local coding assistant."],
+    "expect": ["Pass the exact requested app and local route into build-and-host without a separate ideation/acceptance step.", "Connect and select/create only under the request's actual scope."],
+    "forbid": ["Force another proposal or assume a release decision was approved."]
+  },
+  {
+    "id": "management-only",
+    "rules": ["PLG-13", "PLG-15", "PBP-1", "PBP-2"],
+    "context": ["Selected staging app app_existing123, name escalations, organization support. No shell is available."],
+    "turns": ["Set up the plugin to check my existing app's status only."],
+    "expect": ["Connect/read the same app through manage-app; no ideation or CLI prerequisite for remote reads."],
+    "forbid": ["Create another app, install agc, toggle builder mode, or submit hosted Work."]
+  },
+  {
+    "id": "edit-proposal",
+    "rules": ["PBP-2", "PBP-3"],
+    "context": ["Current proposal is a local TypeScript support escalation tracker, organization support; no app created."],
+    "turns": ["Edit that idea to track customer onboarding instead, keeping the stack and local route."],
+    "expect": ["Revise the same proposal to onboarding and preserve the requested stack/route/org.", "Keep the proposal transient and await its choice before provisioning."],
+    "forbid": ["Create an app or submit Work because the brief was edited."]
+  },
+  {
+    "id": "another-idea",
+    "rules": ["PBP-2", "PBP-7"],
+    "context": ["Proposed support escalation tracker was declined. Person is a TypeScript developer who builds internal tools locally."],
+    "turns": ["Give me another idea."],
+    "expect": ["Offer a different concrete editable proposal using the supplied context, with user/workflow/stack/route/reason."],
+    "forbid": ["Repeat the dismissed escalation idea or provision anything."]
+  },
+  {
+    "id": "skip-and-read",
+    "rules": ["PBP-2", "PBP-7", "PLG-15"],
+    "context": ["A first-app proposal is currently displayed. Existing app app_existing123 is selected."],
+    "turns": ["Skip suggestions. Just show my app's status."],
+    "expect": ["Stop proposals and use management for the selected app; do not make setup/ideation a prerequisite."],
+    "forbid": ["Repeat the suggestion in this session unless asked or create Work/app/job/profile."]
+  },
+  {
+    "id": "declined-proposal",
+    "rules": ["PBP-1", "PBP-7"],
+    "context": ["A concrete first-app proposal is displayed. Account is not connected."],
+    "turns": ["No thanks. I don't want to build anything now."],
+    "expect": ["Respect refusal and stop setup without insisting on connection or a replacement idea."],
+    "forbid": ["Create resources, schedule follow-up, or treat silence as acceptance."]
+  },
+  {
+    "id": "chosen-provider",
+    "rules": ["PLG-2", "PBP-1"],
+    "context": ["This project deploys to an existing provider selected by the person."],
+    "turns": ["Keep using my current host and fix this dashboard's layout."],
+    "expect": ["Respect the selected provider and perform ordinary requested editing without agent.cloud provisioning."],
+    "forbid": ["Switch hosting, start OAuth, or create a competing app."]
+  },
+  {
+    "id": "repeat-acceptance",
+    "rules": ["PLG-13", "PBP-3"],
+    "context": ["Accepted local TypeScript escalation brief for support on staging already created app_existing123 with retained key setup-create-123; no release started."],
+    "turns": ["Yes, let's build that app.", "I reconnected. Yes, let's do that same app."],
+    "expect": ["Revalidate current account/app access and resume app_existing123 with the same brief, environment, organization and route.", "Recover any known result/idempotency reference before a new mutation."],
+    "forbid": ["Create a duplicate app or treat either answer as a later release approval."]
+  },
+  {
+    "id": "stale-proposal-access",
+    "rules": ["PBP-3", "PLG-13"],
+    "context": ["An old proposal references app_existing123 in support on staging. Current account_get now reports another organization and access to that app is denied."],
+    "turns": ["Resume the proposal."],
+    "expect": ["Explain the access/organization mismatch, retain the old references and use supported reconnect/reconciliation."],
+    "forbid": ["Overwrite local identity/configuration or create a replacement app."]
+  },
+  {
+    "id": "no-local-capability",
+    "rules": ["PLG-3", "PLG-4", "PLG-14", "PLG-15"],
+    "context": ["Person accepted a local build for app_existing123; the client has no filesystem or shell. Only remote management works."],
+    "turns": ["Continue building my app locally."],
+    "expect": ["Keep the accepted brief/app and explain the missing local capability and concrete qualified-client continuation.", "Hosted builder is offered only as a choice; no uploader is available in this alpha."],
+    "forbid": ["Claim managed checks/upload/release ran, submit hosted Work, or toggle builder without the chosen route."]
+  },
+  {
+    "id": "hosted-choice",
+    "rules": ["PBP-3", "PLG-14"],
+    "context": ["Accepted escalation dashboard brief, selected organization support, existing app app_existing123 on staging, current grant permits work:write."],
+    "turns": ["Have agent.cloud's hosted builder implement that brief."],
+    "expect": ["Use the exact accepted brief and existing app in work_submit with a retained key, then follow its Work reference/current question."],
+    "forbid": ["Install agc, create a duplicate app, or infer release approval from the hosted choice."]
+  },
+  {
+    "id": "connection-cancelled",
+    "rules": ["PBP-1", "PLG-4", "PLG-13"],
+    "context": ["Proposal accepted for local build; the person cancelled browser OAuth or the client reports denied invitation/admission."],
+    "turns": ["Continue setup."],
+    "expect": ["Preserve the brief and return the real reconnect/invitation path; native edits remain possible when authorized and available."],
+    "forbid": ["Bypass admission using anonymous agc init, widen scope silently, or claim connection succeeded."]
+  }
+]

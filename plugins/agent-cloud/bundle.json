@@ -1,0 +1,78 @@
+{
+  "name": "agent-cloud",
+  "version": "0.1.0-alpha.1",
+  "environment": "production",
+  "target": "combined",
+  "repository": "https://github.com/summationai/agent-cloud-plugin",
+  "resource": "https://agent.cloud/mcp",
+  "protocol_version": "2026-10-27",
+  "capabilities": {
+    "setup": true,
+    "management": "requires-connected-M1-service",
+    "cli_publishing": "M3-acceptance-pending",
+    "uploader": false,
+    "persistent_profile": false
+  },
+  "files": {
+    ".claude-plugin/plugin.json": {
+      "sha256": "9825e1177081c9389ca17630d06ebc8d50e2b29dacfcead131101e54d3c7e1f8",
+      "bytes": 476
+    },
+    ".mcp.json": {
+      "sha256": "81eeec3a860e2bc5861b6b5ddcb18e423530adf49b670212ce7b2fecbfafdd8b",
+      "bytes": 114
+    },
+    "ACCEPTANCE.md": {
+      "sha256": "ecb4b18c51b51040d0d4e9a80399dbaadbe2b57f65794f479a945dd13e480337",
+      "bytes": 2838
+    },
+    "CLIENTS.md": {
+      "sha256": "05c512e58418277994e15bdc1c437ee4beb1022685f23a9f4e43685ae941f9ae",
+      "bytes": 1976
+    },
+    "LICENSE-STATUS.md": {
+      "sha256": "d2350094fb0e4e88e562ab7e1a5d36eeaabd1bef324a88ac3329efc86fbc5d8c",
+      "bytes": 218
+    },
+    "README.md": {
+      "sha256": "97c3f118d669b644c10ead8f30ce3ea65d455dd3d4054f7a6d1b1cb144fed293",
+      "bytes": 5369
+    },
+    "mcp.json": {
+      "sha256": "104dcc7ef0f8dbf1dbe34df16a52971c7ec551d139ee9acba3496c1496175579",
+      "bytes": 197
+    },
+    "plugin.json": {
+      "sha256": "4b9a032576ff60639bb1fbf973deebee8a2d79603b38fef84eb24828c727699d",
+      "bytes": 1048
+    },
+    "references/connection.md": {
+      "sha256": "222f9c56cec4df952d33f8ea6bbec09e92b00f88020ea2396a6c13c75bbe77a0",
+      "bytes": 2996
+    },
+    "references/continuity.md": {
+      "sha256": "e35f544e2aaa790057892f3920a47de9f127a13978b2246acf0ccb2a3505f868",
+      "bytes": 1847
+    },
+    "references/starters.json": {
+      "sha256": "c1761b1cea511ce1c6fa2e12bd5190da93de488333199b5da269d80d967a13d1",
+      "bytes": 384
+    },
+    "scripts/connect-codex.mjs": {
+      "sha256": "f25ccb2206a2e91886cc76051b8b843470a226ed55b7cd9637dd769a1d8f3b3b",
+      "bytes": 4163
+    },
+    "skills/build-and-host/SKILL.md": {
+      "sha256": "5a3923f0613b3ec91a9c80d642b6a81e813a9b478509fc6889f140ba813bf19d",
+      "bytes": 5118
+    },
+    "skills/manage-app/SKILL.md": {
+      "sha256": "ffd9d7ee2cc7e0a949eb87a02883528bdd0a014effd237615865b1dca399b807",
+      "bytes": 2418
+    },
+    "skills/setup/SKILL.md": {
+      "sha256": "cefb51ddf918246e3534fc8e81a4a4a19339ba7949f17934efa857aae00f44ec",
+      "bytes": 3254
+    }
+  }
+}

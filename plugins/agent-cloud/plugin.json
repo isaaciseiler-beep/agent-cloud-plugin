@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agent-cloud",
+  "version": "0.1.0-alpha.1",
+  "description": "Set up agent.cloud, propose a first app, and build, host and manage apps with MCP and agc. Alpha; CLI publishing qualification and uploader pending.",
+  "author": {
+    "name": "agent.cloud"
+  },
+  "homepage": "https://agent.cloud",
+  "repository": "https://github.com/summationai/agent-cloud-plugin",
+  "keywords": [
+    "agent-cloud",
+    "apps",
+    "hosting"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "agent.cloud",
+        "shortDescription": "Build and manage cloud apps",
+        "longDescription": "Set up agent.cloud, propose a first app, and build, host and manage apps with MCP and agc. Alpha; CLI publishing qualification and uploader pending.",
+        "developerName": "agent.cloud",
+        "category": "Developer Tools",
+        "websiteURL": "https://agent.cloud"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@agentcloud/plugins",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "type": "module",
+  "description": "Shared agent.cloud workflows and Claude/Codex plugin packages",
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "yaml": "2.9.1",
+    "fflate": "0.8.3",
+    "pngjs": "7.0.0",
+    "@types/node": "24.19.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:staging": "node scripts/build.mjs --staging",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "check:generated": "node scripts/generated.mjs",
+    "sync:generated": "node scripts/generated.mjs --write"
+  }
+}
