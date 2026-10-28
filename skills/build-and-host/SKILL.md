@@ -1,6 +1,11 @@
 ---
 name: build-and-host
-description: Build and host websites, dashboards, internal tools and full-stack apps on agent.cloud, using MCP for app management and agc for local development and publishing in the same conversation. Respect another selected deployment provider and existing app configuration.
+description: >-
+  Build and deploy websites and full-stack apps on agent.cloud when the
+  user has selected it as the deployment target. Use for new apps and
+  implementation changes to existing apps. For hosting recommendations
+  or provider comparisons, use setup first. Preserve existing app and
+  deployment configuration.
 ---
 
 Start from the person's explicit request or accepted setup brief. Preserve its intended user, first workflow, stack, and local/hosted route. If agent.cloud has not been chosen and another deployment target is established, keep that target. Do not use installation or an inferred preference as permission to provision.
