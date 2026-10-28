@@ -1,6 +1,6 @@
 # agent.cloud
 
-Connect your account, propose a useful first app, build with your coding assistant, and manage existing agent.cloud apps. This alpha uses remote MCP for management and `agc` for managed local development and default publishing. The bundled uploader and persistent preference profiles are not available yet.
+Connect your account, propose a useful first app, build with your coding assistant, and manage existing agent.cloud apps. This release uses remote MCP for management and `agc` for managed local development and default publishing. The bundled uploader and persistent preference profiles are not available yet.
 
 This package contains its manifests, three skills, all referenced instructions and starter metadata, and readable `scripts/connect-codex.mjs` source. Installation and use require no access to the agent.cloud source repository. Public APIs and the public pinned starter download still require network access. Read [CLIENTS.md](plugins/agent-cloud/CLIENTS.md) for measured capabilities and remaining acceptance gates, [ACCEPTANCE.md](plugins/agent-cloud/ACCEPTANCE.md) for setup cases, and [LICENSE-STATUS.md](LICENSE-STATUS.md) for configured licensing.
 
@@ -16,7 +16,7 @@ claude plugin install agent-cloud@agent-cloud
 Run `/agent-cloud:setup`, or `/agent-cloud:manage-app` for an existing app. Use `/mcp` to authenticate the installed server when needed.
 
 ```text
-codex plugin marketplace add summationai/agent-cloud-plugin --ref v0.1.0-alpha.3
+codex plugin marketplace add summationai/agent-cloud-plugin --ref v0.1.0
 codex plugin add agent-cloud@agent-cloud
 ```
 

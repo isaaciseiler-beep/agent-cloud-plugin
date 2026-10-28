@@ -1,6 +1,6 @@
 {
   "name": "agent-cloud",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0",
   "environment": "production",
   "target": "combined",
   "repository": "https://github.com/summationai/agent-cloud-plugin",
@@ -15,36 +15,36 @@
   },
   "files": {
     ".claude-plugin/plugin.json": {
-      "sha256": "7bdfb6d19fcf7fa367d0bf6833517270f4649a95b4bffe1441d2d22830100a2f",
-      "bytes": 476
+      "sha256": "3a62a7481237613bdee45947870e7fd256eb0abafcea5a8a09a8427c13c0b040",
+      "bytes": 478
     },
     ".mcp.json": {
       "sha256": "81eeec3a860e2bc5861b6b5ddcb18e423530adf49b670212ce7b2fecbfafdd8b",
       "bytes": 114
     },
     "ACCEPTANCE.md": {
-      "sha256": "88bd54d18f0b6af539b12e4486dad1db71dce6800cf4e2ddf99eff51be57f65c",
+      "sha256": "0533811d2906cc915c54944b984070ac96ffd803a4d7a6eca4c424070943cc93",
       "bytes": 3671
     },
     "CLIENTS.md": {
-      "sha256": "05c512e58418277994e15bdc1c437ee4beb1022685f23a9f4e43685ae941f9ae",
-      "bytes": 1976
+      "sha256": "b67da32a80c5fd02f18c66741a8f4b87a37826136d921c94bea02729e2e4c07c",
+      "bytes": 1986
     },
     "LICENSE-STATUS.md": {
       "sha256": "d2350094fb0e4e88e562ab7e1a5d36eeaabd1bef324a88ac3329efc86fbc5d8c",
       "bytes": 218
     },
     "README.md": {
-      "sha256": "8aa107548009c93c59b8e0d862bf864b1bc03e50051ad3bad66964f89ee40191",
-      "bytes": 5549
+      "sha256": "0c0a180d20c31ea4effbea0400e6e0fe7eeb8f5191b08a111527bffbba810245",
+      "bytes": 5543
     },
     "mcp.json": {
       "sha256": "104dcc7ef0f8dbf1dbe34df16a52971c7ec551d139ee9acba3496c1496175579",
       "bytes": 197
     },
     "plugin.json": {
-      "sha256": "fd57631598c97a62bfe5e9614e3c4e50521cc1ef9979fa324b470cf0859a8784",
-      "bytes": 1048
+      "sha256": "615ea92baecd38dba64f6b8895e6087c2cedcc78a81e82bb50338d65b57432bc",
+      "bytes": 1060
     },
     "references/connection.md": {
       "sha256": "222f9c56cec4df952d33f8ea6bbec09e92b00f88020ea2396a6c13c75bbe77a0",
@@ -67,12 +67,12 @@
       "bytes": 5167
     },
     "skills/manage-app/SKILL.md": {
-      "sha256": "72f8adb626cb577e0e4ac4bff565193ac86351550b98904c5d2c32c93274e598",
-      "bytes": 2496
+      "sha256": "c9a07645f98cf32b060972333af22755a13ebb378809539dcf1f1a5e4575b3ce",
+      "bytes": 2498
     },
     "skills/setup/SKILL.md": {
-      "sha256": "8b24e75304b2b5560e714914575693dafc400659f88ba39a8795308d8429dcec",
-      "bytes": 5375
+      "sha256": "8915ce972a5424b1aa12f0fc8c4906214284ba909fac13458f7626bf42b35660",
+      "bytes": 5377
     }
   }
 }

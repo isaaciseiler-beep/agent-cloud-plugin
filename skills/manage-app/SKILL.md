@@ -8,7 +8,7 @@ description: >-
   changes and deployment, use build-and-host.
 ---
 
-Use [connection](../../references/connection.md) and [continuity](../../references/continuity.md) to select the existing app in the correct organization/environment. Skip ideation. Discover the actual tools; upload/release-write tools are not implemented in this alpha. Prefer read operations for status, bounded scrubbed logs, release history, domains, builder mode, Work and current decisions. Follow explicit pagination/continuation cursors without claiming partial results are complete.
+Use [connection](../../references/connection.md) and [continuity](../../references/continuity.md) to select the existing app in the correct organization/environment. Skip ideation. Discover the actual tools; upload/release-write tools are not implemented in this release. Prefer read operations for status, bounded scrubbed logs, release history, domains, builder mode, Work and current decisions. Follow explicit pagination/continuation cursors without claiming partial results are complete.
 
 Make requested changes using the specific supported management tool under current app authority. Retain idempotency keys and result references for retries. A reconnect, expired grant, missing access or empty visible page never justifies creating a replacement app. Report the reconnect/access outcome and retain the app/operation references. Request broader scope or purpose through consent only when the requested operation needs it.
 
