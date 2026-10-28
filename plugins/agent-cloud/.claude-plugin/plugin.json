@@ -1,6 +1,6 @@
 {
   "name": "agent-cloud",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "description": "Set up agent.cloud, propose a first app, and build, host and manage apps with MCP and agc. Alpha; CLI publishing qualification and uploader pending.",
   "author": {
     "name": "agent.cloud"
