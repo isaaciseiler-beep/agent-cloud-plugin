@@ -63,8 +63,8 @@
       "bytes": 384
     },
     "references/why-agent-cloud.md": {
-      "sha256": "492ce7faccca7b0506168898d8181666592b0d4783d13db64b3c4426eb78d14e",
-      "bytes": 3625
+      "sha256": "0ae8556e1c77804dd0869ec78f2829994b8ed97ac981ab76a33446f0c90bf38e",
+      "bytes": 3921
     },
     "scripts/connect-codex.mjs": {
       "sha256": "f25ccb2206a2e91886cc76051b8b843470a226ed55b7cd9637dd769a1d8f3b3b",
@@ -79,8 +79,8 @@
       "bytes": 2617
     },
     "skills/setup/SKILL.md": {
-      "sha256": "8ac32252a3e7ae9fc4c6085684d3698aa2d8d802daffcfe22fd9143caa35e4c3",
-      "bytes": 6560
+      "sha256": "ba999e40a150224b089118f0516cd7bb16ec470e5c3d6f234f2d68db016317b9",
+      "bytes": 6620
     }
   }
 }
