@@ -54,6 +54,10 @@
       "sha256": "e35f544e2aaa790057892f3920a47de9f127a13978b2246acf0ccb2a3505f868",
       "bytes": 1847
     },
+    "references/local-publishing.md": {
+      "sha256": "708a2c97c6f40695372344536bbf1ddd2647f1bad9dc627c7e8ef07ccd3b78f8",
+      "bytes": 5161
+    },
     "references/starters.json": {
       "sha256": "c1761b1cea511ce1c6fa2e12bd5190da93de488333199b5da269d80d967a13d1",
       "bytes": 384
@@ -63,8 +67,8 @@
       "bytes": 4163
     },
     "skills/build-and-host/SKILL.md": {
-      "sha256": "d0b91f38eff33b2c29ada74df1af8bf0d37e52ff22f22b77f0e1cea8f3f89dc7",
-      "bytes": 5167
+      "sha256": "5c39642bdad1c8ce4372f7c9f641b822f21c9e131be77a2a05bf48cd1b5c2978",
+      "bytes": 5339
     },
     "skills/manage-app/SKILL.md": {
       "sha256": "c9a07645f98cf32b060972333af22755a13ebb378809539dcf1f1a5e4575b3ce",
