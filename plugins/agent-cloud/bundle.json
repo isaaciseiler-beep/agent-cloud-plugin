@@ -23,8 +23,8 @@
       "bytes": 114
     },
     "ACCEPTANCE.md": {
-      "sha256": "ecb4b18c51b51040d0d4e9a80399dbaadbe2b57f65794f479a945dd13e480337",
-      "bytes": 2838
+      "sha256": "88bd54d18f0b6af539b12e4486dad1db71dce6800cf4e2ddf99eff51be57f65c",
+      "bytes": 3671
     },
     "CLIENTS.md": {
       "sha256": "05c512e58418277994e15bdc1c437ee4beb1022685f23a9f4e43685ae941f9ae",
@@ -35,8 +35,8 @@
       "bytes": 218
     },
     "README.md": {
-      "sha256": "97c3f118d669b644c10ead8f30ce3ea65d455dd3d4054f7a6d1b1cb144fed293",
-      "bytes": 5369
+      "sha256": "60c764c809af82aad4a8121e8786cd4861dae56766ea4852e3889b151fce901d",
+      "bytes": 5549
     },
     "mcp.json": {
       "sha256": "104dcc7ef0f8dbf1dbe34df16a52971c7ec551d139ee9acba3496c1496175579",
@@ -71,8 +71,8 @@
       "bytes": 2418
     },
     "skills/setup/SKILL.md": {
-      "sha256": "cefb51ddf918246e3534fc8e81a4a4a19339ba7949f17934efa857aae00f44ec",
-      "bytes": 3254
+      "sha256": "ee971d28a141517b6055a17ce48e6e04631c493f2fce85724a59e2583ef2588a",
+      "bytes": 4626
     }
   }
 }
